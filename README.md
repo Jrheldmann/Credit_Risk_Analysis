@@ -6,9 +6,11 @@ The goal of this project is to use skills in data preparation, statistical reaso
 A credit card dataset will be sourced from the LendingClub and oversampled using RandomOverSampler and SMOTE algorithms. Then, the dataset will be undersampled using the ClusterCentroids algorithm. After which, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm will be utilized. Finally, two new machine learning models that reduce bias will be compared, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk.
 
 ## Results
-### Balanced accuracy, precision and recall scores of all six machine learning models
+#### Balanced accuracy, precision and recall scores of all six machine learning models
 
-* Naive Random Oversampling
+### Naive Random Oversampling
+
+![Naive Random Oversampling](images/NAIVE_RANDOM.PNG)
 
   * Balanced Accuracy Score: 0.64
 
@@ -16,7 +18,9 @@ A credit card dataset will be sourced from the LendingClub and oversampled using
 
   * Recall: 72/(72 + 29) = 0.71
 
-* SMOTE Oversampling
+### SMOTE Oversampling
+
+![SMOTE Oversampling](images/SMOTE_OVER.PNG)
 
   * Balanced Accuracy Score: 0.66
 
@@ -24,7 +28,9 @@ A credit card dataset will be sourced from the LendingClub and oversampled using
 
   * Recall: 64/(64 + 37) = 0.63
   
-* Undersampling
+### Undersampling
+
+![Undersampling](images/UNDERSAMPLE.PNG)
 
   * Balanced Accuracy Score: 0.54
 
@@ -32,7 +38,9 @@ A credit card dataset will be sourced from the LendingClub and oversampled using
 
   * Recall: 70/(70 + 31) = 0.69
   
-* SMOTEENN
+### SMOTEENN
+
+![SMOTEENN](images/SMOTEENN.PNG)
 
   * Balanced Accuracy Score: 0.65
 
@@ -40,7 +48,9 @@ A credit card dataset will be sourced from the LendingClub and oversampled using
 
   * Recall: 73/(73 + 28) = 0.72
   
-* Balanced Random Forest Classifier
+### Balanced Random Forest Classifier
+
+![Balanced Random Forest Classifier](images/BAL_RANDOM_FOREST.PNG)
 
   * Balanced Accuracy Score: 0.79
 
@@ -48,7 +58,9 @@ A credit card dataset will be sourced from the LendingClub and oversampled using
 
   * Recall: 71/(71 + 30) = 0.70
   
-* Easy Ensemble AdaBoost Classifier
+### Easy Ensemble AdaBoost Classifier
+
+![Easy Ensemble AdaBoost Classifier](images/EZ_ENSEMBLE.PNG)
 
   * Balanced Accuracy Score: 0.93
 
@@ -62,5 +74,7 @@ Thus, my recommendation would be to use the Easy Ensemble AdaBoost Classifier to
 
 ## Resources
 Data [LoanStats_2019Q1.csv](LoanStats_2019Q1.csv)
+
 Software: Python, Jupyter Notebook
+
 Libraries: warnings, numpy, pandas, pathlib, collections, sklearn.metrics, imblearn.metrics, imblearn.ensemble, sklearn.preprocessing
